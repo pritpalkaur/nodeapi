@@ -25,6 +25,11 @@ node app.js
 ## Step 3
 
 ``` UI
-# Upload existing keystore file or the files provided in "./keystore" folder. 
-Pass Phrase: Test1234!
+# run this url 
+
+api url to GetBalance : http://localhost:3000/contracts/GetBalanceByAddress
+
+api url to GetSmartContract : http://localhost:3000/contracts/GetSmartContractInit
+
+api url to GetRecentTransactions : http://localhost:3000/contracts/GetRecentTransactions
 
