@@ -36,7 +36,7 @@ async GetNumTransactions()
   async GetBalanceByAddress(address)
   {
     const balance = await zilliqa.blockchain.getBalance(address);
-    return balance;     
+    return balance.result ;     
   }
  
   async GetSmartContractState(address)
@@ -63,7 +63,7 @@ async GetNumTransactions()
     try {
      const outPut = await zilliqa.blockchain.getRecentTransactions();
      console.log("recepit here",outPut);
-     return outPut
+     return outPut.result;
    } 
    catch (e) {
      console.log(e);
