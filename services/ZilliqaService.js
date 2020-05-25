@@ -75,7 +75,7 @@ async getSmartContractInit(address)
   try {
     const outPut = await zilliqa.blockchain.getSmartContractInit(address)
     console.log("recepit here",outPut);
-    return outPut
+    return outPut.result
   } 
   catch (e) {
     console.log(e);
