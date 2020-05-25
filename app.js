@@ -153,9 +153,16 @@ app.post('/', function (req, res) {
   res.render('index');  
 });
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 var routes = require('./api/routes/contractListRoutes'); //importing route
  routes(app);
  
+
 app.listen(3000, function () {
   console.log('Wallet app listening on porttt 3000!')
 });
