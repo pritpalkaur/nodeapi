@@ -1,4 +1,4 @@
-# Wallet Hasitha - How to run the app?
+#How to run the app?
 
 Prerequisites - NodeJS must be installed in computer.
 App is developed with expressjs framework and pure javascript, css and html on top of NodeJS as a server.
