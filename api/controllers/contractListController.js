@@ -2,7 +2,7 @@
 const { Zilliqa } = require('@zilliqa-js/zilliqa');
  
 //Calling walletData service 
-var walletData  = require('C:\\Users\\pritp\\Documents\\Web-based-zilliqa-wallet\\services\\ZilliqaService.js');
+var walletData  = require('C:\\Users\\pritp\\Documents\\nodeapi\\services\\ZilliqaService.js');
 
 exports.GetBalanceByAddress = function(req, res) {
   let wData = new walletData();
